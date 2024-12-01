@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link href="style.css" rel="stylesheet" />
+         <title>Mon Premier Projet JavaScript</title>
+     </head>
+        <body class="body">
+
+            <header id="headerid">
+                
+                <img id="logo" src="img/lotr-logo.svg" alt="logo">
+
+                <form>
+                    <label for="search">Search</label>
+                    <input id="search" type="search" pattern=".*\S.*" required>
+                    <span class="caret"></span>
+                </form>
+
+                <div class="divdarkmode_btn">
+                    <button class="darkmode_btn">☾</button>
+                </div>
+                
+
+            </header>
+
+        <main>
+
+            <div class="message-error">
+                <ul></ul>
+            </div>
+
+            <h1 id="main-h1">TABS</h1>
+
+
+            <ul class="ultab">
+                <li class="tab tab-text1 tab-active" data-tab="1">
+                    Info 1
+                </li>
+                <li class="tab tab-text2" data-tab="2">
+                    Info 2
+                </li>
+                <li class="tab tab-text3" data-tab="3">
+                    Info 3
+                </li>
+            </ul>
+            
+            <div class="content content1 content-inactive content-active" data-content="1">
+                <p>It's a dangerous business, Frodo, going out your door. 
+                    You step onto the road, and if you don't keep your feet, there's no knowing where you might be swept off to.</p>
+            </div>
+            <div class="content content2 content-inactive" data-content="2">
+                <P>It's the job that's never started as takes longest to finish.</P>
+            </div>
+            <div class="content content3 content-inactive" data-content="3">
+                <p>But in the end it's only a passing thing, this shadow; even darkness must pass.</p>
+            </div>
+         
+
+            <form id="register-form">
+
+                <h2 id="h2-form">Register</h2>
+
+                <div class="div-name">
+                    <label for="name"></label>
+                    <input class="input" type="text" name="" id="pseudo" placeholder="Votre nom..">
+                </div>
+                <div class="div-email">
+                    <label for="email"></label>
+                    <input class="input" type="email" name="" id="email" placeholder="Votre Email..">
+                </div>
+                <div class="div-password">
+                    <label for="password"></label>
+                    <input class="input" type="password" name="" id="password" placeholder="Tapez votre mot de passe..">
+                </div>
+                <div class="div-check-password">
+                    <label for="check-password"></label>
+                    <input class="input" type="password" name="" id="passwordconfirmation" placeholder="Confirmer votre mot de passe...">
+                </div>
+
+
+                <div class="message-success">
+                    Message envoyé!
+                </div>
+
+                <h4 id="h4-checkboxes">Veuillez cocher les cases pour continuer:</h4>
+
+              <div class="checkboxes">
+
+                <input type="checkbox" id="18yo" name="checkbox1" value="18">
+                <label for="vehicle1"> J'ai plus de 18 ans.</label><br>
+                <input type="checkbox" id="cgu" name="checkbox2" value="cgu">
+                <label for="vehicle2"> J'ai lu et accepté les CGU.</label><br> 
+              </div>
+
+
+                <button type="submit" class="submit-btn">Se connecter</button>
+
+
+            </form>
+
+         <script src="main.js"></script>
+         <script src="simu.js"></script>
+
+        </main> 
+
+     </body>
+
+</html>
